@@ -1,25 +1,22 @@
-# Applied Cryptography Coursework – Paillier Homomorphic Encryption
+# Paillier Homomorphic Encryption Implementation
+**MSc Cybersecurity | Edinburgh Napier University**
 
-This repository contains the coursework submission for the Applied Cryptography module. The project investigates and demonstrates the use of the Paillier homomorphic encryption scheme using Python.
+## 🛡️ Project Overview
+This repository demonstrates a practical implementation of the **Paillier Cryptosystem**, a probabilistic asymmetric algorithm for public-key cryptography. This project explores the unique **additive homomorphic properties** of Paillier, allowing mathematical operations to be performed on ciphertext without decryption.
 
-## 📁 Contents
+## 🚀 Key Features
+* **Asymmetric Key Generation**: Secure generation of public and private keypairs.
+* **Homomorphic Addition**: Demonstrates $E(m_1 + m_2) = E(m_1) \cdot E(m_2) \pmod{n^2}$.
+* **Scalar Multiplication**: Demonstrates multiplication of encrypted values by unencrypted constants.
+* **Secure Decryption**: Verification of mathematical results post-decryption.
 
-- `Applied_Cryptography_Coursework_Final.pdf`: Final submission-ready coursework report (PDF)
-- `Applied_Cryptography_Coursework.docx`: Editable DOCX version of the report
-- `Homomorphic_Encryption_Paillier_Demo.ipynb`: Google Colab notebook demonstrating encryption, homomorphic addition, and decryption
+## 💻 Tech Stack
+* **Language**: Python 3.12
+* **Libraries**: `phe` (Partially Homomorphic Encryption)
+* **Environment**: Virtual Environment (venv) for dependency isolation.
 
-## 📌 Project Summary
-
-The implementation shows how encrypted integers can be securely processed using the additive homomorphic property of the Paillier cryptosystem. Two plaintext values are encrypted, added together while still encrypted, and then decrypted to verify the result.
-
-The coursework also includes benchmarking, comparison with RSA and ElGamal, and a practical use case simulation.
-
-## 📚 References
-
-Please refer to the final report for citations and detailed explanation.
-
----
-
-🔒 Repository maintained by: **Kyaw San**  
-🎓 MSc Cybersecurity | Edinburgh Napier University | 2025
-[README (1).md](https://github.com/user-attachments/files/20107172/README.1.md)
+## 🛠️ Installation & Setup
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/kyawbobosan/applied-crypto-paillier.git](https://github.com/kyawbobosan/applied-crypto-paillier.git)
+   cd applied-crypto-paillier
